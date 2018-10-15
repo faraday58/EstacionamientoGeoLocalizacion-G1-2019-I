@@ -29,7 +29,15 @@ namespace ControlEstacionamiento
         {
             int renglon = e.RowIndex;
             miVehiculo = new Vehiculo(dgvDatosVehículo.Rows[renglon].Cells[0].Value.ToString(), dgvDatosVehículo.Rows[renglon].Cells[1].Value.ToString(), int.Parse(dgvDatosVehículo.Rows[renglon].Cells[2].Value.ToString()), 32.5f, dgvDatosVehículo.Rows[renglon].Cells[3].Value.ToString(), dgvDatosVehículo.Rows[renglon].Cells[4].Value.ToString());
-
+            vehiculos.Enqueue(miVehiculo);
+            MessageBox.Show("Vehículo ingresado");
+            timerEstacionamiento.Enabled = true;
+        }
+        int i = 0;
+        private void timerEstacionamiento_Tick(object sender, EventArgs e)
+        {
+            i++;
+            lb_timer.Text = i.ToString() + " s";
         }
     }
 }
