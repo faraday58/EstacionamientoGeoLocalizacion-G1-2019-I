@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstacionamientoGeoLocalizac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estacionamientos", "Estacionamientos\Estacionamientos.csproj", "{8A2139D3-BDFA-4142-98F6-FFB073E8ED5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlEstacionamiento", "ControlEstacionamiento\ControlEstacionamiento.csproj", "{D3D90A7F-DAB7-4EC8-9C91-6F2C57AA4288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos", "Vehiculo\Vehiculos.csproj", "{C9103B00-16AA-4207-B969-AE9F87C44086}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8A2139D3-BDFA-4142-98F6-FFB073E8ED5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A2139D3-BDFA-4142-98F6-FFB073E8ED5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A2139D3-BDFA-4142-98F6-FFB073E8ED5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D90A7F-DAB7-4EC8-9C91-6F2C57AA4288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D90A7F-DAB7-4EC8-9C91-6F2C57AA4288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D90A7F-DAB7-4EC8-9C91-6F2C57AA4288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D90A7F-DAB7-4EC8-9C91-6F2C57AA4288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9103B00-16AA-4207-B969-AE9F87C44086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9103B00-16AA-4207-B969-AE9F87C44086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9103B00-16AA-4207-B969-AE9F87C44086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9103B00-16AA-4207-B969-AE9F87C44086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
