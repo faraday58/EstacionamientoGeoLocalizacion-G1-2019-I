@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ptbCroquis = new System.Windows.Forms.PictureBox();
             this.dgvDatosVehículo = new System.Windows.Forms.DataGridView();
             this.columnaplacas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnahoraIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,18 +38,11 @@
             this.timerEstacionamiento = new System.Windows.Forms.Timer(this.components);
             this.lb_timer = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCroquis)).BeginInit();
+            this.ptbCroquis = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosVehículo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCroquis)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ptbCroquis
-            // 
-            this.ptbCroquis.Location = new System.Drawing.Point(33, 54);
-            this.ptbCroquis.Name = "ptbCroquis";
-            this.ptbCroquis.Size = new System.Drawing.Size(322, 255);
-            this.ptbCroquis.TabIndex = 0;
-            this.ptbCroquis.TabStop = false;
             // 
             // dgvDatosVehículo
             // 
@@ -115,6 +107,16 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // ptbCroquis
+            // 
+            this.ptbCroquis.Image = global::ControlEstacionamiento.Properties.Resources.coche1;
+            this.ptbCroquis.Location = new System.Drawing.Point(33, 54);
+            this.ptbCroquis.Name = "ptbCroquis";
+            this.ptbCroquis.Size = new System.Drawing.Size(322, 255);
+            this.ptbCroquis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCroquis.TabIndex = 0;
+            this.ptbCroquis.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,9 +127,9 @@
             this.Controls.Add(this.ptbCroquis);
             this.Name = "Form1";
             this.Text = "Control";
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCroquis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosVehículo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCroquis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
