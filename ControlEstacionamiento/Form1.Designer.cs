@@ -31,15 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.ptbCroquis = new System.Windows.Forms.PictureBox();
             this.dgvDatosVehículo = new System.Windows.Forms.DataGridView();
-            this.timerEstacionamiento = new System.Windows.Forms.Timer(this.components);
             this.columnaplacas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnahoraIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnahorasalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnaDetalles = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnaCajon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timerEstacionamiento = new System.Windows.Forms.Timer(this.components);
             this.lb_timer = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ptbCroquis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosVehículo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ptbCroquis
@@ -64,11 +66,6 @@
             this.dgvDatosVehículo.Size = new System.Drawing.Size(531, 255);
             this.dgvDatosVehículo.TabIndex = 1;
             this.dgvDatosVehículo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatosVehículo_CellDoubleClick);
-            // 
-            // timerEstacionamiento
-            // 
-            this.timerEstacionamiento.Interval = 1000;
-            this.timerEstacionamiento.Tick += new System.EventHandler(this.timerEstacionamiento_Tick);
             // 
             // columnaplacas
             // 
@@ -100,6 +97,11 @@
             this.columnaCajon.HeaderText = "Cajon";
             this.columnaCajon.Name = "columnaCajon";
             // 
+            // timerEstacionamiento
+            // 
+            this.timerEstacionamiento.Interval = 1000;
+            this.timerEstacionamiento.Tick += new System.EventHandler(this.timerEstacionamiento_Tick);
+            // 
             // lb_timer
             // 
             this.lb_timer.AutoSize = true;
@@ -108,6 +110,10 @@
             this.lb_timer.Size = new System.Drawing.Size(35, 13);
             this.lb_timer.TabIndex = 2;
             this.lb_timer.Text = "label1";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Form1
             // 
@@ -121,6 +127,7 @@
             this.Text = "Control";
             ((System.ComponentModel.ISupportInitialize)(this.ptbCroquis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosVehículo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,6 +144,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn columnaDetalles;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnaCajon;
         private System.Windows.Forms.Label lb_timer;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
