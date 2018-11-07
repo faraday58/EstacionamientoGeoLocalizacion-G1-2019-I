@@ -7,11 +7,11 @@ using Vehiculos;
 
 namespace ControlEstacionamiento
 {
-    public partial class Form1 : Form
+    public partial class ControlEntradaSalida : Form
     {
         Vehiculo miVehiculo; 
         Queue<Vehiculo> vehiculos;
-        public Form1()
+        public ControlEntradaSalida()
         {
             InitializeComponent();
             vehiculos = new Queue<Vehiculo>();
@@ -55,7 +55,7 @@ namespace ControlEstacionamiento
             i++;
             lb_timer.Text = i.ToString() + " s";
             valorauto = new Random();
-            int valor= valorauto.Next(1, 3);
+            int valor= valorauto.Next(1, 4);
             switch(valor )
             {
                 case 1:
