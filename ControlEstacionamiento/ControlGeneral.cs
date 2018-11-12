@@ -48,5 +48,11 @@ namespace ControlEstacionamiento
             EncendidoLuz encendidoLuz = new EncendidoLuz(serialPort, this);
             encendidoLuz.Show();
         }
+
+        private void monitorTemperaturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MonitorTemperatura monitorTemperatura = new MonitorTemperatura(serialPort, this);
+            monitorTemperatura.Show();
+        }
     }
 }
